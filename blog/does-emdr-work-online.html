@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Does EMDR therapy work online? | Aceso Therapy</title>
+<meta name="description" content="How virtual EMDR works, what to expect, and how to know if online EMDR is right for you. Online EMDR therapy across Ontario and Saskatchewan.">
+<link rel="canonical" href="https://acesotherapy.ca/blog/does-emdr-work-online">
+<meta property="og:title" content="Does EMDR therapy work online? | Aceso Therapy">
+<meta property="og:description" content="How virtual EMDR works, what to expect, and how to know if online EMDR is right for you. Online EMDR therapy across Ontario and Saskatchewan.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Mulish:wght@300;400;600&display=swap">
+<style>
+/* Layout: LIV-style flow — split hero with dotted photo, feature strip, emotional prompts, services, EMDR explainer, about, why, steps, FAQ, booking band. Gender-neutral sage / oat / slate palette */
+:root{
+  --bg:#F8FAFA;
+  --surface:#FFFFFF;
+  --tint:#E4F3F5;
+  --ink:#152A30;
+  --muted:#46606A;
+  --line:#CFE1E4;
+  --sage:#1E7A8C;
+  --sage-deep:#165F6E;
+  --sand:#86C3CC;
+  --on-sage:#FFFFFF;
+  --band:#12495A;
+  --on-band:#F2F7F7;
+  --olive:#186B7C;
+  --olive-deep:#12495A;
+  --olive-soft:#D8EEF1;
+  --laurel:#9ED7DE;
+  --display:"Cormorant Garamond","Cormorant",Garamond,Georgia,serif;
+  color-scheme:light;
+  --body:"Mulish",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.3rem,5.4vw,3.8rem)}
+h2{font-size:clamp(1.75rem,3.4vw,2.5rem)}
+h3{font-size:1.3rem}
+p{margin:0}
+a{color:var(--sage)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--sand);outline-offset:3px;border-radius:4px}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--sage)}
+.muted{color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--sage);color:var(--on-sage);text-decoration:none;font-weight:600;padding:13px 24px;border-radius:999px;font-size:.95rem;letter-spacing:.02em;transition:background .2s,transform .15s}
+.btn:hover{background:var(--sage-deep);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.btn.light{background:var(--on-band);color:var(--band)}
+.btn.light:hover{background:var(--sand);color:var(--band)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.mark{width:36px;height:36px;border-radius:50%;background:var(--sage);color:var(--on-sage);display:grid;place-items:center;font-family:var(--display);font-size:1rem}
+.brand b{font-family:var(--display);font-weight:400;font-size:1.2rem;display:block;line-height:1.1}
+.brand small{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.links{display:flex;gap:24px;align-items:center;font-size:.95rem}
+.links a:not(.btn){color:var(--ink);text-decoration:none}
+.links a:not(.btn):hover{color:var(--sage)}
+
+
+/* hero */
+.hero{padding-block:64px 56px;display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+.hero > *{min-width:0}
+.hero .lede{font-size:1.15rem;color:var(--muted);max-width:32em;margin-top:20px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.photo{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:24px;background:linear-gradient(160deg,var(--tint),var(--sand));overflow:hidden}
+.photo::after{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--sage) 1.3px,transparent 1.6px);background-size:14px 14px;opacity:.28;-webkit-mask-image:linear-gradient(120deg,#000 0%,transparent 55%);mask-image:linear-gradient(120deg,#000 0%,transparent 55%)}
+.photo .ph{position:absolute;inset:0;display:grid;place-items:center;font-size:.85rem;color:var(--ink);opacity:.6}
+.photo .badge{position:absolute;left:18px;bottom:18px;right:18px;z-index:1;background:var(--surface);border-radius:14px;padding:14px 16px;font-size:.88rem;display:flex;gap:12px;align-items:center}
+.photo .badge .mark{flex:none}
+.photo .badge strong{display:block;font-family:var(--display);font-weight:400;font-size:1rem}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding-block:40px;gap:36px}.photo{max-width:400px}}
+
+/* feature strip */
+.strip{background:var(--band);color:var(--on-band)}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-block:26px}
+.strip div{display:grid;gap:2px}
+.strip strong{font-family:var(--display);font-weight:400;font-size:1.1rem}
+.strip span{font-size:.9rem;opacity:.8}
+@media (max-width:760px){.strip .wrap{grid-template-columns:1fr;gap:16px}}
+.trust{border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:20px 48px;padding-block:26px}
+.seal{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.seal .slot{flex:none;width:64px;height:44px;border:1px dashed var(--sand);display:grid;place-items:center;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.seal b{display:block;font-weight:600;font-size:.92rem}
+.seal small{color:var(--muted);font-size:.82rem}
+.ptbadge{flex:none;display:inline-flex;align-items:center;min-width:64px;min-height:44px}
+.ptbadge:has(a:empty){border:1px dashed var(--sand)}
+.seal small a{color:var(--muted);text-decoration:none}
+.seal small a:hover{color:var(--sage)}
+.badge-img{flex:none;width:64px;height:64px;object-fit:contain;border-radius:50%;background:#fff}
+a.seal:hover small{color:var(--sage)}
+
+section{padding-block:80px}
+.head{max-width:42em;display:grid;gap:12px;margin-bottom:44px}
+.head.center{margin-inline:auto;text-align:center}
+
+/* prompts */
+.prompts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.prompt{background:var(--surface);border-radius:20px;padding:30px;display:grid;gap:14px;align-content:start}
+.prompt h3{font-size:1.35rem}
+.prompt p{color:var(--muted)}
+.prompt .q{font-family:var(--display);font-size:2.6rem;line-height:.6;color:var(--sand)}
+@media (max-width:860px){.prompts{grid-template-columns:1fr}}
+
+/* services */
+.services{background:var(--tint)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--surface);border-radius:20px;padding:30px;display:grid;gap:12px;align-content:start}
+.card p{color:var(--muted)}
+.card .lead{display:inline-block;justify-self:start;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;background:var(--sage);color:var(--on-sage);padding:4px 10px;border-radius:999px}
+.card a.more{font-weight:600;text-decoration:none;justify-self:start}
+.card a.more:hover{text-decoration:underline}
+@media (max-width:760px){.cards{grid-template-columns:1fr}}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px;justify-content:center}
+.areas span{font-size:.88rem;background:var(--surface);border:1px solid var(--line);padding:6px 14px;border-radius:999px}
+
+/* emdr */
+.emdr{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.emdr > *{min-width:0}
+.phases{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.phases li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding-block:16px;border-top:1px solid var(--line)}
+.phases li:last-child{border-bottom:1px solid var(--line)}
+.phases .n{font-family:var(--display);font-size:1.3rem;color:var(--sage)}
+.phases b{display:block;font-weight:600}
+.phases span{color:var(--muted);font-size:.95rem}
+@media (max-width:820px){.emdr{grid-template-columns:1fr;gap:32px}}
+
+/* about */
+.about{background:var(--surface)}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.3fr;gap:56px;align-items:center}
+.about .wrap > *{min-width:0}
+.about .photo{aspect-ratio:1;border-radius:50%;max-width:360px}
+.about .body{display:grid;gap:16px;max-width:36em}
+.creds{display:flex;flex-wrap:wrap;gap:8px}
+.creds span{font-size:.82rem;background:var(--tint);padding:5px 12px;border-radius:999px}
+blockquote{margin:6px 0 0;padding-left:18px;border-left:2px solid var(--sand);font-family:var(--display);font-size:1.1rem;line-height:1.45}
+blockquote cite{display:block;font-family:var(--body);font-style:normal;font-size:.82rem;color:var(--muted);margin-top:8px}
+@media (max-width:820px){.about .wrap{grid-template-columns:1fr;gap:32px}.about .photo{max-width:260px}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.why div{display:grid;gap:8px;align-content:start;border-top:2px solid var(--sage);padding-top:16px}
+.why p{color:var(--muted);font-size:.95rem}
+@media (max-width:900px){.why{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.why{grid-template-columns:1fr}}
+
+/* fees */
+.fees{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fees > *{min-width:0}
+.panel{background:var(--surface);border-radius:20px;padding:30px}
+.price{display:flex;justify-content:space-between;align-items:baseline;padding-block:14px;border-bottom:1px solid var(--line)}
+.price b{font-family:var(--display);font-weight:400;font-size:1.8rem;font-variant-numeric:tabular-nums}
+.small{font-size:.9rem;color:var(--muted);margin-top:16px}
+.insurers{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.insurers span{font-size:.85rem;border:1px solid var(--line);padding:5px 12px;border-radius:999px}
+@media (max-width:760px){.fees{grid-template-columns:1fr}}
+
+/* group */
+.group{background:var(--band);color:var(--on-band);border-radius:24px;padding:44px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+.group > *{min-width:0}
+.group .eyebrow{color:var(--sand)}
+.group p{opacity:.88;margin-top:14px}
+.group ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.group li{padding:12px 16px;border-radius:12px;background:color-mix(in srgb,var(--on-band) 10%,transparent);font-size:.95rem}
+.group .btn{margin-top:24px}
+@media (max-width:760px){.group{grid-template-columns:1fr;padding:28px}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:820px;margin-inline:auto}
+.step{background:var(--surface);border-radius:20px;padding:30px;display:grid;gap:10px;align-content:start}
+.step .n{width:40px;height:40px;border-radius:50%;background:var(--tint);color:var(--sage);display:grid;place-items:center;font-family:var(--display);font-size:1.1rem}
+.step p{color:var(--muted)}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:48em;margin-inline:auto}
+details{border-bottom:1px solid var(--line);padding-block:18px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--sage);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px}
+
+/* closing */
+.closing{background:var(--tint);text-align:center}
+.closing .wrap{display:grid;gap:18px;justify-items:center}
+.phone{font-variant-numeric:tabular-nums;font-weight:600;user-select:all}
+.crisis{max-width:44em;font-size:.85rem;color:var(--muted);margin-top:10px}
+footer{padding-block:28px;font-size:.85rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+
+/* refined, quieter overrides */
+body{font-weight:400;font-size:17px;line-height:1.75}
+h1,h2,h3{font-weight:500;letter-spacing:-.005em;line-height:1.1}
+h1{font-size:clamp(2.7rem,6vw,4.4rem)}
+h2{font-size:clamp(2.1rem,4vw,3rem)}
+h3{font-size:1.55rem}
+h1 em,h2 em{font-style:italic;font-weight:400;color:var(--sage)}
+.eyebrow{font-family:var(--display);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-size:1.2rem;color:var(--sage)}
+.brand b{font-size:1.5rem;font-weight:500}
+.brand small{letter-spacing:.04em;text-transform:none;font-style:italic;font-family:var(--display);font-size:.95rem}
+.btn{border-radius:2px;font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;padding:14px 26px}
+.photo{border-radius:220px 220px 4px 4px;background:linear-gradient(170deg,var(--tint),var(--sand))}
+.photo::after{opacity:.18}
+.photo .badge{border-radius:2px}
+.about .photo{border-radius:220px 220px 4px 4px;aspect-ratio:4/5}
+.prompt{background:none;border-top:1px solid var(--sand);border-radius:0;padding:24px 0 0}
+.card,.step,.panel{border-radius:4px;box-shadow:none}
+.card{border:1px solid var(--line)}
+.why div{border-top:1px solid var(--sand)}
+.areas,.creds,.insurers{gap:0 4px}
+.areas span,.creds span,.insurers span{background:none;border:0;padding:0;border-radius:0;font-size:.95rem;color:var(--muted)}
+.areas span:not(:last-child)::after,.creds span:not(:last-child)::after,.insurers span:not(:last-child)::after{content:" ·";color:var(--sand)}
+.areas{max-width:46em;margin-inline:auto;text-align:center;justify-content:center}
+.step .n{background:none;width:auto;height:auto;display:block;font-style:italic;font-size:2rem;color:var(--sand)}
+.phases .n{font-style:italic;font-size:1.6rem;color:var(--sand)}
+.group{border-radius:4px}
+.group li{background:none;border-top:1px solid color-mix(in srgb,var(--on-band) 25%,transparent);border-radius:0;padding:10px 0}
+.price b{font-weight:500;font-size:2.1rem}
+blockquote{font-style:italic;font-size:1.35rem;border-left-color:var(--sand)}
+summary{font-family:var(--display);font-weight:500;font-size:1.3rem}
+.strip strong{font-size:1.35rem;font-weight:500}
+.aceso{background:var(--bg);padding:18px 20px;border-left:1px solid var(--sand);color:var(--muted)}
+.aceso .eyebrow{display:block;margin-bottom:4px}
+.aceso .tagline{display:block;font-family:var(--display);font-size:1.45rem;line-height:1.25;color:var(--ink);margin-bottom:8px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo::after{z-index:0;opacity:.12}
+
+.insure{max-width:46em;margin-inline:auto;text-align:center;display:grid;gap:16px;justify-items:center}
+.insure .insurers{justify-content:center;margin-top:4px}
+.ask{margin-top:28px;padding-top:28px;border-top:1px solid var(--sand);display:grid;gap:12px;justify-items:center;width:100%}
+@media (max-width:600px){.ask .btn{width:100%}}
+.cols{list-style:none;margin:0 auto;padding:0;columns:3;column-gap:48px;max-width:900px}
+.cols li{break-inside:avoid;padding:6px 0 6px 18px;position:relative;line-height:1.45}
+.cols li::before{content:"";position:absolute;left:0;top:.95em;width:6px;height:6px;border-radius:50%;background:var(--sage)}
+.cols li a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--sand);text-underline-offset:3px}
+.cols.two{columns:2;margin:0 auto;max-width:680px}
+.center-cta{display:flex;justify-content:center;margin-top:36px}
+.approaches{background:var(--surface)}
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.split > *{min-width:0}
+.side-photo{aspect-ratio:4/5;max-width:100%;overflow:hidden;border-radius:220px 220px 4px 4px;background:var(--tint)}
+.side-photo img{width:100%;height:100%;object-fit:cover;object-position:52% 30%;display:block}
+@media (max-width:820px){.cols{columns:2;column-gap:28px}.split{grid-template-columns:1fr;gap:36px}.side-photo{max-width:340px}}
+@media (max-width:480px){.cols{columns:2;column-gap:18px;font-size:.92rem}.cols.two{columns:1;font-size:1rem}.center-cta .btn{width:100%}}
+.phone{white-space:nowrap}
+/* goddess accent: sea glass teal */
+.strip{background:var(--olive)}
+.strip strong{color:#FFFFFF}
+.strip span{color:#D5EEF2;opacity:1}
+#emdr{background:var(--olive-soft)}
+#emdr .phases .n{color:var(--olive)}
+#emdr .eyebrow{color:var(--olive)}
+.approaches{background:var(--olive-deep);color:#EEF6F4}
+.approaches h2{color:#FFFFFF}
+.approaches .eyebrow{color:var(--laurel)}
+.approaches .muted{color:#C6E6EB}
+.approaches .cols li{color:#EEF6F4}
+.approaches .cols li::before{background:var(--laurel)}
+.approaches .cols li a{color:#FFFFFF;text-decoration-color:var(--laurel)}
+.closing{background:var(--band);color:var(--on-band)}
+.closing h2{color:#FFFFFF}
+.closing .eyebrow{color:var(--laurel)}
+.closing .muted,.closing .crisis{color:#D2E9ED}
+.closing .btn{background:var(--laurel);color:var(--olive-deep)}
+.closing .btn:hover{background:#FFFFFF;color:var(--band)}
+.cols li::before{background:var(--olive)}
+/* water photography */
+.water-banner{background:url("images/water-pale.jpg") center/cover no-repeat;padding-block:clamp(90px,14vw,170px)}
+.water-banner .wrap{display:flex;justify-content:center}
+.water-line{background:rgba(255,255,255,.88);font-family:var(--display);font-style:italic;font-size:clamp(1.5rem,3.2vw,2.3rem);line-height:1.2;color:var(--olive-deep);padding:18px 30px;text-align:center;text-wrap:balance;max-width:28em}
+.approaches{background:linear-gradient(rgba(14,62,76,.86),rgba(14,62,76,.86)),url("images/water-deep.jpg") center/cover no-repeat}
+.closing{background:linear-gradient(rgba(12,52,64,.82),rgba(12,52,64,.82)),url("images/water-bright.jpg") center/cover no-repeat}
+/* logo lockup */
+.brand{gap:12px}
+.brand-mark{width:34px;height:43px;flex:none}
+.brand-text{display:flex;flex-direction:column;gap:5px;border-left:1px solid var(--line);padding-left:12px}
+.brand-name{font-family:var(--display);font-weight:500;font-size:1.45rem;letter-spacing:.24em;line-height:1;color:var(--ink)}
+.brand-sub{font-family:var(--body);font-size:.6rem;font-weight:600;letter-spacing:.55em;color:var(--sage)}
+@media (max-width:600px){.brand-mark{width:28px;height:35px}.brand-name{font-size:1.2rem;letter-spacing:.2em}.brand-sub{font-size:.55rem;letter-spacing:.48em}.brand-text{padding-left:10px}}
+.head:has(.two-line){max-width:none}
+.two-line span{display:block}
+@media (min-width:720px){.two-line span{white-space:nowrap}}
+.hero-title{font-family:var(--display);font-weight:500;font-size:clamp(2.7rem,6vw,4.4rem);line-height:1.1;letter-spacing:-.005em;text-wrap:balance;margin:14px 0 0;color:var(--ink)}
+.hero-title em{font-style:italic;font-weight:400;color:var(--sage)}
+h1.eyebrow{line-height:1.4;font-weight:400}
+.post-wrap{max-width:720px;margin:0 auto;padding-inline:20px}
+.post-hero{background:var(--tint);padding-block:56px 44px}
+.crumbs{font-size:.85rem;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a{color:var(--sage);text-decoration:none}
+.post-hero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin-top:14px}
+.post-meta{margin-top:14px;font-size:.88rem;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+.post-cover{height:220px;background-size:cover;background-position:center}
+.post-body{padding-block:48px 24px;font-size:1.06rem;line-height:1.8}
+.post-body > *+*{margin-top:1.1em}
+.post-body .lead{font-size:1.2rem;color:var(--ink)}
+.post-body h2{font-size:clamp(1.6rem,3vw,2rem);margin-top:1.8em}
+.post-body ul{padding-left:1.2em}
+.post-body li+li{margin-top:.4em}
+.post-body li::marker{color:var(--olive)}
+.post-cta{margin-block:24px 72px;background:var(--olive-deep);color:#EEF6F4;padding:32px;display:grid;gap:12px}
+.post-cta h2{color:#FFFFFF;font-size:1.8rem}
+.post-cta p{color:#C6E6EB}
+.post-cta .btn{justify-self:start;background:var(--laurel);color:var(--olive-deep)}
+.post-note{font-size:.85rem;color:var(--muted);margin-bottom:56px}
+.blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.blog-card{background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:var(--ink)}
+.blog-card .cover{height:150px;background-size:cover;background-position:center}
+.blog-card .in{padding:22px;display:grid;gap:10px;flex:1;align-content:start}
+.blog-card .tag{font-family:var(--display);font-style:italic;color:var(--sage);font-size:1.05rem}
+.blog-card h3{font-size:1.45rem;line-height:1.15}
+.blog-card p{color:var(--muted);font-size:.95rem}
+.blog-card .more{font-weight:600;color:var(--sage);font-size:.92rem;margin-top:auto}
+.blog-card:hover h3{color:var(--sage)}
+@media (max-width:860px){.blog-grid{grid-template-columns:1fr}}
+/* clean + simple (LIV-style) */
+section{padding-block:64px}
+.head{margin-bottom:32px}
+.prompts{gap:28px}
+.cards{gap:28px 40px}
+.water-banner{padding-block:clamp(64px,10vw,120px)}
+@media (max-width:600px){section{padding-block:44px}.head{margin-bottom:24px}}
+.head.center h2{max-width:22em;margin-inline:auto}
+.btn{border-radius:999px;text-transform:none;letter-spacing:.01em;font-size:.95rem;font-weight:600;padding:14px 28px}
+.btn.ghost{border-width:1px}
+.photo{border-radius:220px 220px 6px 6px}
+.photo::after{display:none}
+.photo .badge{display:none}
+.about .photo{border-radius:220px 220px 6px 6px;aspect-ratio:4/5}
+.prompt{border-top:0;padding:0;text-align:center}
+.prompts{gap:40px}
+.card{background:none;border:0;border-top:1px solid var(--sand);border-radius:0;padding:24px 0 0}
+.cards{gap:40px 48px}
+.trust .wrap{gap:20px 56px;padding-block:32px}
+.ptbadge:has(a:empty){border:0}
+.aceso{background:none;border-left:0;padding:0;font-style:italic;font-family:var(--display);font-size:1.15rem}
+.aceso .eyebrow{font-style:normal;font-family:var(--body);font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.water-line{background:none;color:var(--olive-deep);text-shadow:0 0 22px rgba(255,255,255,.85),0 0 6px rgba(255,255,255,.6);padding:0}
+.water-banner{background:linear-gradient(rgba(255,255,255,.28),rgba(255,255,255,.28)),url("images/water-pale.jpg") center/cover no-repeat}
+.blog-card{border:0;background:none;border-radius:0}
+.blog-card .cover{border-radius:16px;height:200px}
+.blog-card .in{padding:20px 0 0}
+.insure .ask{border-top:0}
+.closing .btn{border-radius:999px}
+#faq{background:var(--olive-soft)}
+#faq details{border-bottom-color:#B5D9DF}
+#faq summary::after{color:var(--olive)}
+#faq .eyebrow{color:var(--olive)}
+#blog{padding-bottom:40px}
+#faq{padding-top:44px}
+@media (max-width:600px){#blog{padding-bottom:32px}#faq{padding-top:32px}}
+.water-line{font-weight:600;font-size:clamp(1.9rem,4.2vw,3.1rem);color:var(--band);letter-spacing:.005em;text-shadow:0 0 28px rgba(255,255,255,.95),0 0 10px rgba(255,255,255,.8),0 1px 2px rgba(255,255,255,.9)}
+.water-banner{background:linear-gradient(rgba(255,255,255,.38),rgba(255,255,255,.38)),url("images/water-pale.jpg") center/cover no-repeat}
+@media (min-width:900px){.approaches .head{max-width:none}.approaches .head p{white-space:nowrap}}
+.topbar{background:var(--band);color:var(--on-band);text-align:center;padding:9px 16px}
+.topbar h1{font-family:var(--body);font-size:.85rem;font-weight:600;letter-spacing:.04em;line-height:1.4;margin:0;color:var(--on-band)}
+@media (max-width:600px){.topbar h1{font-size:.78rem}}
+footer .trust{border-bottom:1px solid var(--line);margin-bottom:22px}
+footer .trust .wrap{padding-block:4px 22px}
+/* mobile: photo beside headline */
+@media (max-width:820px){
+  .hero{grid-template-columns:minmax(0,1fr) 128px;column-gap:18px;row-gap:0;align-items:center}
+  .hero-copy{display:contents}
+  .hero-title{grid-column:1;grid-row:1;font-size:clamp(2.1rem,9vw,2.7rem);margin:0}
+  .hero .photo{grid-column:2;grid-row:1;width:128px;max-width:none;align-self:center}
+  .hero .lede{grid-column:1/-1;grid-row:2;margin-top:22px}
+  .hero .ctas{grid-column:1/-1;grid-row:3}
+}
+.hero .ctas .btn{white-space:nowrap}
+@media (max-width:600px){.hero .ctas .btn{font-size:clamp(.78rem,3.9vw,.95rem);padding-inline:14px}}
+/* responsive: laptop + phone */
+.nav-cta,.menu-toggle{display:none}
+.menu-toggle{width:44px;height:44px;border:1px solid var(--line);background:var(--surface);border-radius:2px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:6px;padding:0}
+.menu-toggle span{display:block;width:18px;height:1.5px;background:var(--ink);transition:transform .2s}
+.menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(3.75px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:last-child{transform:translateY(-3.75px) rotate(-45deg)}
+@media (max-width:860px){
+  .nav{flex-wrap:wrap;gap:10px;padding-block:10px}
+  .brand{margin-right:auto}
+  .brand b{font-size:1.3rem}
+  .brand small{font-size:.85rem}
+  .nav-cta{display:inline-flex;padding:11px 16px;font-size:.75rem}
+  .menu-toggle{display:flex}
+  .links{display:none;flex-basis:100%;flex-direction:column;align-items:stretch;gap:0;padding-block:6px 14px}
+  .links.open{display:flex}
+  .links a:not(.btn){padding:13px 2px;border-top:1px solid var(--line);font-size:1.05rem}
+  .links .btn{margin-top:12px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding-block:56px}
+  .hero{padding-block:28px 36px}
+  .hero .lede{font-size:1.05rem}
+  .ctas .btn{width:100%}
+  .photo{max-width:100%}
+  .head{margin-bottom:32px}
+  .trust .wrap{display:grid;justify-content:stretch;gap:16px;padding-block:22px}
+  .card,.step,.panel{padding:24px 20px}
+  .closing .btn{width:100%}
+  footer .wrap{flex-direction:column;gap:6px}
+}
+@media (min-width:1400px){.wrap{max-width:1200px}}
+@media (prefers-reduced-motion:reduce){.btn,.menu-toggle span{transition:none}}
+</style>
+<style>
+.post-wrap{max-width:720px;margin:0 auto;padding-inline:20px}
+.post-hero{background:var(--tint);padding-block:56px 44px}
+.crumbs{font-size:.85rem;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a{color:var(--sage);text-decoration:none}
+.post-hero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin-top:14px}
+.post-meta{margin-top:14px;font-size:.88rem;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+.post-cover{height:220px;background-size:cover;background-position:center}
+.post-body{padding-block:48px 24px;font-size:1.06rem;line-height:1.8}
+.post-body > *+*{margin-top:1.1em}
+.post-body .lead{font-size:1.2rem;color:var(--ink)}
+.post-body h2{font-size:clamp(1.6rem,3vw,2rem);margin-top:1.8em}
+.post-body ul{padding-left:1.2em}
+.post-body li+li{margin-top:.4em}
+.post-body li::marker{color:var(--olive)}
+.post-cta{margin-block:24px 72px;background:var(--olive-deep);color:#EEF6F4;padding:32px;display:grid;gap:12px}
+.post-cta h2{color:#FBF8F1;font-size:1.8rem}
+.post-cta p{color:#CBE2DD}
+.post-cta .btn{justify-self:start;background:var(--laurel);color:var(--olive-deep)}
+.post-note{font-size:.85rem;color:var(--muted);margin-bottom:56px}
+.blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.blog-card{background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:var(--ink)}
+.blog-card .cover{height:150px;background-size:cover;background-position:center}
+.blog-card .in{padding:22px;display:grid;gap:10px;flex:1;align-content:start}
+.blog-card .tag{font-family:var(--display);font-style:italic;color:var(--sage);font-size:1.05rem}
+.blog-card h3{font-size:1.45rem;line-height:1.15}
+.blog-card p{color:var(--muted);font-size:.95rem}
+.blog-card .more{font-weight:600;color:var(--sage);font-size:.92rem;margin-top:auto}
+.blog-card:hover h3{color:var(--sage)}
+@media (max-width:860px){.blog-grid{grid-template-columns:1fr}}
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="../index.html" aria-label="Aceso Therapy, home">
+      <svg class="brand-mark" viewBox="0 0 120 150" fill="none" aria-hidden="true"><path d="M16 144 V62 A44 44 0 0 1 104 62 V144" stroke="#1E7A8C" stroke-width="4" stroke-linecap="round"></path><path d="M8 144 H112" stroke="#1E7A8C" stroke-width="4" stroke-linecap="round"></path><text x="60" y="112" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="68" font-weight="500" fill="#152A30">A</text><path d="M33 128 Q 39.75 123.5 46.5 128 T 60 128 T 73.5 128 T 87 128" stroke="#2E93A6" stroke-width="4" stroke-linecap="round"></path></svg>
+      <span class="brand-text"><span class="brand-name">ACESO</span><span class="brand-sub">THERAPY</span></span>
+    </a>
+    <a class="btn nav-cta" href="https://deliabagi.janeapp.com/#staff_member/1" target="_blank" rel="noopener">Book</a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu"><span></span><span></span></button>
+    <nav class="links" id="siteNav">
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#areas">Areas</a>
+      <a href="../index.html#emdr">EMDR</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#fees">Insurance</a>
+      <a href="index.html">Blog</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a class="btn" href="https://deliabagi.janeapp.com/#staff_member/1" target="_blank" rel="noopener">Free consultation</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+<div class="post-hero"><div class="post-wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="index.html">Blog</a></nav>
+  <h1>Does EMDR therapy work online?</h1>
+  <div class="post-meta"><span>By Délia Bagi, RP</span><span>October 12, 2026</span><span>5 min read</span></div>
+</div></div>
+<div class="post-cover" style="background-image:url('../images/water-pale.jpg')" role="img" aria-label="Calm water"></div>
+<article class="post-wrap post-body">
+
+<p class="lead">One of the most common questions I hear is whether EMDR can really work over video. The short answer: for many people, yes. Here's how it works, what's different online, and how to tell if it's a good fit for you.</p>
+
+<h2>A quick refresher: what is EMDR?</h2>
+<p>EMDR (Eye Movement Desensitization and Reprocessing) is a structured, evidence-based therapy for trauma. It's recommended by the World Health Organization for post-traumatic stress. EMDR helps your brain reprocess painful memories so they stop feeling like they're happening right now. It uses bilateral stimulation, such as guided eye movements or alternating tapping, while you briefly bring a memory to mind.</p>
+<p>You don't need to describe every detail of what happened. The work happens inside your own nervous system, at a pace you control.</p>
+
+<h2>How EMDR works over video</h2>
+<p>The structure of online EMDR is the same as in person. What changes is how the bilateral stimulation is delivered:</p>
+<ul>
+<li><strong>Eye movements on screen.</strong> You follow a moving dot or light on your screen with your eyes.</li>
+<li><strong>Self-tapping.</strong> You tap your own shoulders or knees in an alternating rhythm, sometimes called the butterfly hug.</li>
+<li><strong>Audio tones.</strong> With headphones, you hear a sound that alternates between your left and right ears.</li>
+</ul>
+<p>We'll try the options together and use whichever feels most comfortable and effective for you.</p>
+
+<h2>Is it as effective as in-person EMDR?</h2>
+<p>Research on virtual EMDR has grown a lot in recent years, and it suggests online EMDR can be effective for many people. Clinically, many of my clients find trauma work easier from home. Being in a familiar, private space can make it feel safer to open up, and there's no commute to manage afterward.</p>
+<p>Everyone is different, though. Part of our early work is checking that online sessions feel steady and safe for you.</p>
+
+<h2>When in-person might be a better fit</h2>
+<p>Online EMDR may not be the right starting point if you don't have a private space where you won't be interrupted, if your internet connection is unreliable, or if you're currently in crisis and need more intensive support. We can talk through any of these in your free consultation.</p>
+
+<h2>What you'll need for online EMDR</h2>
+<ul>
+<li>A private, quiet room where you feel comfortable</li>
+<li>A laptop or tablet. A larger screen works better than a phone for eye movements.</li>
+<li>A stable internet connection</li>
+<li>Headphones, if you'd like to use audio tones</li>
+</ul>
+
+<h2>The bottom line</h2>
+<p>For many people, online EMDR offers the same healing process with added comfort and flexibility. If you're curious whether it's right for you, a free 15-minute consultation is a good place to start.</p>
+
+</article>
+<div class="post-wrap">
+  <div class="post-cta"><h2>Ready to take the first step?</h2><p>Book a free 15-minute consultation for online therapy in Ontario or Saskatchewan, or call <span class="phone">(289) 273-7896</span>.</p><a class="btn" href="https://deliabagi.janeapp.com/#staff_member/1" target="_blank" rel="noopener">Book a free consultation</a></div>
+  <p class="post-note">This article is for general information and isn't a substitute for professional advice. If you're in crisis, call or text 9-8-8 any time, or call 911.</p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Does EMDR therapy work online?", "description": "How virtual EMDR works, what to expect, and how to know if online EMDR is right for you. Online EMDR therapy across Ontario and Saskatchewan.", "datePublished": "2026-10-12", "author": {"@type": "Person", "name": "Délia Bagi", "jobTitle": "Registered Psychotherapist"}, "publisher": {"@type": "Organization", "name": "Aceso Therapy"}, "mainEntityOfPage": "https://acesotherapy.ca/blog/does-emdr-work-online"}</script>
+</main>
+<footer>
+  <div class="trust">
+    <div class="wrap">
+      <div class="seal"><span class="ptbadge"><!-- Professional verification provided by Psychology Today -->
+<a href="https://www.psychologytoday.com/profile/1377449" class="sx-verified-seal"></a>
+<script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js" data-badge="10" data-id="1377449" data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xMC9wcm9maWxlLzEzNzc0NDk/Y2FsbGJhY2s9c3hjYWxsYmFjaw=="></script>
+<!-- End Verification --></span><span><b>Verified by Psychology Today</b><small><a href="https://www.psychologytoday.com/ca/therapists/delia-bagi-north-york-on/1377449" target="_blank" rel="noopener">View my profile →</a></small></span></div>
+      <a class="seal" href="https://verified.sertifier.com/en/verify/70637426726172/" target="_blank" rel="noopener"><img class="badge-img" src="../images/emdr-canada-2026.png" alt="EMDR Canada 2026 member badge" width="64" height="64"><span><b>EMDR Canada Member 2026</b><small>Verify membership →</small></span></a>
+    </div>
+  </div>
+  <div class="wrap">
+    <span>© 2026 Aceso Therapy · Délia Bagi, MACP, Registered Psychotherapist · CRPO #17918</span>
+    <span>Online across Ontario &amp; Saskatchewan · <span class="phone">(289) 273-7896</span></span>
+  </div>
+</footer>
+<script>
+(function(){
+  var t=document.getElementById('menuToggle'),n=document.getElementById('siteNav');
+  if(!t||!n)return;
+  function set(o){n.classList.toggle('open',o);t.setAttribute('aria-expanded',o?'true':'false');t.setAttribute('aria-label',o?'Close menu':'Open menu');}
+  t.addEventListener('click',function(){set(!n.classList.contains('open'));});
+  n.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});
+})();
+</script>
+</body>
+</html>
